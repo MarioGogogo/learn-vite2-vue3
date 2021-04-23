@@ -1,11 +1,19 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + Vite" />
+  <h1>helloword</h1>
+  <hello-world />
+   
 </template>
 
-<script setup>
+<script>
+import {defineComponent} from 'vue';
 import HelloWorld from './components/HelloWorld.vue'
-
+export default defineComponent({
+    name:"Home",
+    components:{
+      HelloWorld,
+    }
+})
 // This starter template is using Vue 3 experimental <script setup> SFCs
 // Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
 </script>
